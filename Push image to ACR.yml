@@ -1,13 +1,13 @@
-triger: 
+trigger: 
 - main
 variables: 
  tag: '$(Build.Build.Id)'
 stages:
 - stage:
-  displayname: Build Stage 
+  displayName: Build Stage 
   jobs: 
   - job: 
-    displayname: Build job 
+    displayName: Build job 
     pool: 
      vmImage: 'ubuntu-latest'
     steps: 
